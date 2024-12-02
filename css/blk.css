@@ -1,36 +1,36 @@
 body
 {
-    overflow-x: hidden;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
-    background-image: url("../img/5.png");
-    background-blend-mode:darken;
-    background-position: center;
-    background-size: cover;
-    animation: boy 8s linear infinite alternate both;
+    background-repeat: no-repeat;
+    background-color: #202020;
+
   }
 
-    @keyframes body {
+    @keyframes tsle12098 {
       0% {
-        background-color: #545454;
+        color: #545454;
       }
       25% {
-        background-color: #202020;
+        color: #202020;
       }
       50% {
-        background-color: #ea2222;
+        color: #ea2222;
       }
       75% {
-        background-color: #f5be10;
+        color: #f5be10;
       }
       100% {
-        background-color: #3bd80d;
+        color: #3bd80d;
       }
     }
     
 ::-webkit-scrollbar {
     width: 4px;
+    z-index: 50;
   }
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
@@ -45,6 +45,13 @@ body
   }
 .h12098
 {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  background-image: url('../img/fbimg/words1.jpg');
+  background-size: contain;
+  z-index: 0;
 }
 .tsle12098
 {
@@ -52,31 +59,159 @@ body
   font-size: 110px;
   font-weight: 700;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 13%;
   padding: 0px;
   color: white;
   z-index: -1;
+  background-color: yellow;
   word-spacing: 170px;
+}
+.head12098
+{
+  margin: 0px !important;
+  padding: 0px;
+}
+.tsle12098:hover
+{
+  animation: tsle12098 8s linear infinite alternate both;
+}
+.p12809
+{
+  background-color: #3bd80d;
+  font-family: "Tinos", serif;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  width: 450px;
+  text-align: left;
+  margin-top: -3%;
+  margin-right: 2%;
+  margin-left: auto;
+  position: relative;
+  padding: 0px;
+  
+}
+.sp123141
+{
+  font-family: "Caveat", cursive;
+  text-align: right;
+  margin-right: 5%;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  display: block;
 }
 .img121212
 {
+  filter: grayscale(90%);
   width: 60%;
   height: 100vh;
   display: block;
   margin: auto;
-  margin-top: -330px;
+  margin-top: -33%;
   padding: 0px;
+  z-index: 1;
+}
+@keyframes img121212
+{
+ 0%
+ { opacity: 1; }
+ 25%
+ { opacity: 0.75; } 
+ 50% 
+ { opacity: 0.5; }
+ 100%
+ {opacity: 0; }
 }
 .fix120999
 {
-  background-color: #ea2222;
+  background-color: white;
   width: 20%;
   height: 200px;
   position:relative;
   border-radius: 100px;
-  margin-top: -200px !important;
+  margin-top: -17% !important;
   margin: auto;
-  box-shadow: 0px 0px 100px 120px white;
+  box-shadow: 0px 0px 200px 150px rgb(0, 0, 0);
   z-index: -1;
 }
-
+.h2981231
+{
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  background-color: rgb(218, 0, 0);
+  background-image: url('../img/fbimg/moon1.jpg');
+  background-position: right;
+  display: flex;
+  text-align: justify;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -10 !important;
+}
+.imgq8w8qw9e2SD
+{
+  width: 35%;
+  margin: auto;
+}
+.aisdhchariwadinwidnas
+{
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+.paskdnal123123as
+{
+  width:55%;
+  display: flex;
+  color: white;
+  margin: auto;
+  font-size: 18px;
+}
+.h2981231
+{
+  margin: auto;
+  width: 100%;
+  height: 90vh;
+  z-index: 10;
+}
+.aasdknawdklq21
+{
+  background-image: url('../img/fbimg/kuweni.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100% !important;
+}
+.aasdknawdklq21
+{
+  width: 100%;
+}
+.flexbosxxsa
+{
+  width: 100%;
+  background-color: #ea2222;
+  display: flex;
+}
+.round
+{
+  width: fit-content;
+  background-color: white;
+  margin: auto;
+  display: block;
+}
+.asdaklnd1astt
+{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+.maracontwed
+{
+  width: 90%;
+  background-color: #202020;
+  border-radius: 20px;
+  height: 70vh;
+  margin: auto;
+}
