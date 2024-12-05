@@ -45,8 +45,9 @@ body
   }
 .h12098
 {
+  top: 0px;
   opacity: 1;
-  position: absolute;
+
   width: 100%;
   margin: auto;
   background-image: url('../img/fbimg/words1.jpg');
@@ -101,6 +102,10 @@ body
   z-index: 2;
   display: block;
 }
+.img1212
+{
+  margin: 0px !important;
+}
 .img121212
 {
   filter: grayscale(90%);
@@ -137,17 +142,13 @@ body
 }
 .h2981231
 {
-  top: 0px;
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
   background-color: rgb(218, 0, 0);
   background-image: url('../img/fbimg/moon1.jpg');
   background-position: right;
   display: flex;
   text-align: justify;
   background-size: cover;
-  height: 100vh;
+  height: 100vh !important;
   width: 100%;
   z-index: -10 !important;
 }
@@ -156,14 +157,37 @@ body
   width: 35%;
   margin: auto;
 }
+.mah1
+{
+  margin-top: -80%;
+  position: relative;
+  height: 350px;
+  width: 350px;
+  z-index: 10;
+  left: 50%;
+  filter: brightness(60%);
+}
+.doleee
+{
+  margin-top: -20%;
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  z-index: 11;
+  left: -4%;
+  filter: grayscale(60%);
+}
 .aisdhchariwadinwidnas
 {
+  margin-top: -110% !important;
+  position: relative;
   width: 100%;
-  margin: auto;
   display: flex;
+  z-index: 20;
 }
 .paskdnal123123as
 {
+  z-index: 100;
   width:55%;
   display: flex;
   color: white;
@@ -214,4 +238,202 @@ body
   border-radius: 20px;
   height: 70vh;
   margin: auto;
+}
+.paskdnal123123as
+{
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 0.4px 0.4px #323232 !important;
+  border-radius: 20px;
+}
+.rotate {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(10% - 5px);
+  width: 150px;
+  height: 150px;
+  z-index: 12;
+}
+.angle {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+}
+.size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+}
+.position {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.particle {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes angle {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes size {
+  0% {
+    -webkit-transform: scale(.2);
+  }
+  100% {
+    -webkit-transform: scale(.6);
+  }
+}
+@-webkit-keyframes position {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(400px,400px,0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes particle {
+  0% {
+    box-shadow: inset 0 0 20px 20px #ffffff, 0 0 10px 10px #ffffff, inset 0 0 80px 80px #ffffff;
+  }
+  33.33% {
+    box-shadow: inset 0 0 20px 20px #ffffff, 0 0 130px 5px #ffffff, inset 0 0 50px 50px #ffffff;
+  }
+  33.34% {
+    box-shadow: inset 0 0 20px 20px #ffffff, 0 0 50px 10px #ffffff, inset 0 0 80px 80px #ffffff;
+  }
+  66.66% {
+    box-shadow: inset 0 0 20px 20px #ffffff, 0 0 130px 10px #ffffff, inset 0 0 50px 50px #ffffff;
+  }
+  66.67% {
+    box-shadow: inset 0 0 20px 20px #ffffff, 0 0 50px 10px #ffffff, inset 0 0 80px 80px #ffffff;
+  }
+  100% {
+    box-shadow: inset 0 0 20px 20px #ffffff, 0 0 130px 10px #ffffff, inset 0 0 50px 50px #ffffff;
+  }
+}
+.rotate .angle:nth-child(1){
+  /* change the angle every 2 seconds */
+  -webkit-animation: angle 10s steps(5) 0s infinite;
+}
+.rotate .angle:nth-child(1) .size{
+  /* change the size of the particle every 2 seconds */
+  -webkit-animation: size 10s steps(5) 0s infinite;
+}
+.rotate .angle:nth-child(1) .particle{
+  /* animate the glow and change the color every 2 seconds */
+  -webkit-animation: particle 6s linear infinite alternate;
+}
+.rotate .angle:nth-child(1) .position{
+  /* animate the fly out of the particle and its fade out at the end */
+  -webkit-animation: position 2s linear 0s infinite;
+}
+.rotate .angle:nth-child(2){
+  /* change the angle every 2 seconds */
+  -webkit-animation: angle 4.95s steps(3) -1.65s infinite;
+}
+.rotate .angle:nth-child(2) .size{
+  /* change the size of the particle every 2 seconds */
+  -webkit-animation: size 4.95s steps(3) -1.65s infinite alternate;
+}
+.rotate .angle:nth-child(2) .particle{
+  /* animate the glow and change the color every 2 seconds */
+  -webkit-animation: particle 4.95s linear -3.3s infinite alternate;
+}
+.rotate .angle:nth-child(2) .position{
+  /* animate the fly out of the particle and its fade out at the end */
+  -webkit-animation: position 1.65s linear 0s infinite;
+}
+.rotate .angle:nth-child(3){
+  /* change the angle every 2 seconds */
+  -webkit-animation: angle 13.76s steps(8) -6.88s infinite;
+}
+.rotate .angle:nth-child(3) .size{
+  /* change the size of the particle every 2 seconds */
+  -webkit-animation: size 6.88s steps(4) -5.16s infinite alternate;
+}
+.rotate .angle:nth-child(3) .particle{
+  /* animate the glow and change the color every 2 seconds */
+  -webkit-animation: particle 5.16s linear -1.72 infinite alternate;
+}
+.rotate .angle:nth-child(3) .position{
+  /* animate the fly out of the particle and its fade out at the end */
+  -webkit-animation: position 1.72s linear 0s infinite;
+}
+.rotate .angle:nth-child(4){
+  /* change the angle every 2 seconds */
+  -webkit-animation: angle 10s steps(5) 0s infinite;
+}
+.rotate .angle:nth-child(4) .size{
+  /* change the size of the particle every 2 seconds */
+  -webkit-animation: size 10s steps(5) 0s infinite;
+}
+.rotate .angle:nth-child(4) .particle{
+  /* animate the glow and change the color every 2 seconds */
+  -webkit-animation: particle 6s linear infinite alternate;
+}
+.rotate .angle:nth-child(4) .position{
+  /* animate the fly out of the particle and its fade out at the end */
+  -webkit-animation: position 2s linear 0s infinite;
+}
+.rotate .angle:nth-child(4){
+  /* change the angle every 2 seconds */
+  -webkit-animation: angle 4.95s steps(3) -1.65s infinite;
+}
+.rotate .angle:nth-child(4) .size{
+  /* change the size of the particle every 2 seconds */
+  -webkit-animation: size 4.95s steps(3) -1.65s infinite alternate;
+}
+.rotate .angle:nth-child(4) .particle{
+  /* animate the glow and change the color every 2 seconds */
+  -webkit-animation: particle 4.95s linear -3.3s infinite alternate;
+}
+.rotate .angle:nth-child(4) .position{
+  /* animate the fly out of the particle and its fade out at the end */
+  -webkit-animation: position 1.65s linear 0s infinite;
+}
+.rotate .angle:nth-child(4){
+  /* change the angle every 2 seconds */
+  -webkit-animation: angle 13.76s steps(8) -6.88s infinite;
+}
+.rotate .angle:nth-child(4) .size{
+  /* change the size of the particle every 2 seconds */
+  -webkit-animation: size 6.88s steps(4) -5.16s infinite alternate;
+}
+.rotate .angle:nth-child(4) .particle{
+  /* animate the glow and change the color every 2 seconds */
+  -webkit-animation: particle 5.16s linear -1.72 infinite alternate;
+}
+.rotate .angle:nth-child(4) .position{
+  /* animate the fly out of the particle and its fade out at the end */
+  -webkit-animation: position 1.72s linear 0s infinite;
+}
+.rotate .angle:nth-child(5) .position{
+  /* animate the fly out of the particle and its fade out at the end */
+  -webkit-animation: position 2.45s linear 0s infinite;
 }
