@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP Scroll Animation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 200vh; /* Simulating scroll space */
+      background: #f4f4f4;
+    }
+    .h12098 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .head12098 {
+      margin-bottom: 20px;
+    }
+    .img121212 {
+      width: 200px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="h12098">
+    <div class="head12098">
+      <h1 class="tsle12098">Charitha Attalage</h1>
+      <p class="p12809">
+        "THINGS LIKE LOVE AND MUSIC ARE UNDEFINED. YOU CANNOT CLASSIFY THE UNDEFINED"
+        <br>
+        <span class="sp123141">-Charitha Attalage</span>
+      </p>
+    </div>
+    <div class="img1212">
+      <img src="img/chariiiiiiiii.png" alt="Charitha Athlage" class="img121212">
+      <div class="fix120999"></div>
+    </div>
+  </div>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Timeline for animations
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".h12098",
+        start: "top center",
+        end: "bottom top",
+        scrub: 1, // Smoothens the animation
+        pin: true, // Keeps the element pinned while scrolling
+      }
+    });
+
+    // Fade out the span first
+    tl.to(".sp123141", {
+      opacity: 0,
+      duration: 1
+    });
+
+    // Fade out h1 and p together
+    tl.to([".tsle12098", ".p12809"], {
+      opacity: 0,
+      duration: 1
+    }, "-=0.5"); // Overlapping animation with the previous
+
+    // Finally fade out the entire section
+    tl.to(".h12098", {
+      opacity: 0,
+      duration: 1
+    });
+  </script>
+</body>
+</html>

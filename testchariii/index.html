@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script >
+window.addEventListener('scroll', function() {
+    const fadeElements = document.querySelectorAll('.fade');
+    
+    if (window.scrollY > 0) {
+        fadeElements.forEach(function(element) {
+            element.style.opacity = '0';
+            element.style.transition = 'opacity 0.5s ease';  // Smooth fade-out
+        });
+    } else {
+        fadeElements.forEach(function(element) {
+            element.style.opacity = '1';
+            element.style.transition = 'opacity 0.5s ease';  // Smooth fade-in
+        });
+    }
+});
+
+    </script>
+    <div>
+        <div class="fade">
+            Scroll down i will become invisible
+        </div>
+    </div>
+</body>
+</html>

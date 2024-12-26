@@ -7,27 +7,30 @@ body
     scroll-behavior: smooth;
     background-repeat: no-repeat;
     background-color: #202020;
-
-  }
-
+}
+a
+{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
     @keyframes tsle12098 {
       0% {
-        color: #545454;
+        background-color: #545454;
       }
       25% {
-        color: #202020;
+        background-color: #202020;
       }
       50% {
-        color: #ea2222;
+        background-color: #ea2222;
       }
       75% {
-        color: #f5be10;
+        background-color: #f5be10;
       }
       100% {
-        color: #3bd80d;
+        background-color: #3bd80d;
       }
-    }
-    
+    }   
 ::-webkit-scrollbar {
     width: 4px;
     z-index: 50;
@@ -43,16 +46,18 @@ body
   ::-webkit-scrollbar-thumb:hover {
     background: white; 
   }
+
 .h12098
 {
-  top: 0px;
+  top: 0px !important;
   opacity: 1;
-
+  position: absolute !important;
   width: 100%;
   margin: auto;
   background-image: url('../img/fbimg/words1.jpg');
   background-size: contain;
   z-index: 0;
+  overflow-x: hidden !important;
 }
 .tsle12098
 {
@@ -64,7 +69,6 @@ body
   padding: 0px;
   color: white;
   z-index: -1;
-  background-color: yellow;
   word-spacing: 170px;
 }
 .head12098
@@ -78,7 +82,6 @@ body
 }
 .p12809
 {
-  background-color: #3bd80d;
   font-family: "Tinos", serif;
   color: white;
   font-weight: 300;
@@ -193,6 +196,8 @@ body
   color: white;
   margin: auto;
   font-size: 18px;
+  background-color: #32323253;
+  box-shadow: 0px 0px 10px 10px #32323232;
 }
 .h2981231
 {
@@ -203,41 +208,215 @@ body
 }
 .aasdknawdklq21
 {
-  background-image: url('../img/fbimg/kuweni.jpg');
+  position: absolute;
+  background-image: url('../img/fbimg/kuwenistage.png');
   background-size: cover;
   height: 100vh;
   width: 100% !important;
+  animation: tsle12098 8s linear infinite alternate both;
 }
-.aasdknawdklq21
+.khead
 {
   width: 100%;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 42px;
+  margin-top: 3%;
+}
+.ktitle
+{
+  font-family: "Alice", serif;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+.kpara
+{
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+  padding: 10px 50px;
+  text-align: justify;
+  font-size: 17px;
+  margin: auto;
+  font-weight: 400 !important;
 }
 .flexbosxxsa
 {
   width: 100%;
-  background-color: #ea2222;
   display: flex;
 }
-.round
+.rimgrot
 {
-  width: fit-content;
-  background-color: white;
+  position: relative;
+  width: 99%;
+  margin-top: -8% !important;
+  margin-left: 7%;
+  z-index: 1;
+  animation: krot 25s infinite linear;
+
+}
+.rimgrot2
+{
+  position: relative;
+  width: 85%;
+  margin-top: 0% !important;
+  margin-left: 11%;
+  z-index: 1;
+  animation: krot  25s infinite linear;
+}
+.rcenter1
+{
+  left: 6%;
+  margin-top: -97% !important;
+  position: relative !important;
+  z-index: 0;
+}
+.rcenter2
+{
+  width: 85% !important;
+  left: 4%;
+  margin-top: -87% !important;
+  position: relative !important;
+  z-index: 0;
+}
+@keyframes krot{
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.rimg
+{
+  width: 85% ;
   margin: auto;
   display: block;
+  border-radius: 50%;
+}
+.astrofloat1
+{
+  position: relative;
+  width: 71%;
+  left: 13%;
+  animation: float 10s infinite linear;
+}
+@keyframes float {
+  0% {
+            transform: translate(0);
+  }
+  20% {
+            transform: translate(-7px, 7px);
+  }
+  40% {
+            transform: translate(-7px, -7px);
+  }
+  60% {
+            transform: translate(7px, 7px);
+  }
+  80% {
+            transform: translate(7px, -7px);
+  }
+  100% {
+            transform: translate(0);
+  }
+}
+.astrofloat2
+{
+  position: relative;
+  width: 71%;
+  left: 13%;
+  animation: float1 10s infinite linear;
+}
+@keyframes float1 {
+  0% {
+            transform: translate(0);
+  }
+  20% {
+            transform: translate(-7px, -7px);
+  }
+  40% {
+            transform: translate(-7px, 7px);
+  }
+  60% {
+            transform: translate(7px, -7px);
+  }
+  80% {
+            transform: translate(7px, 7px);
+  }
+  100% {
+            transform: translate(0);
+  }
+}
+.rimgcen
+{
+  margin-top: -68% !important;
+  width: 80% !important;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+}
+.ramkafueaoas
+{
+  width: 40% !important;
+}
+.btnstyle
+{
+  position: relative;
+  top: 5%;
+  left: 1%;
+  width: 40%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btnstyle:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
 }
 .asdaklnd1astt
 {
+  overflow-y: hidden;
+  position: absolute;
   width: 100%;
-  height: 100vh;
-  background-color: rgb(0, 0, 0);
+  height: calc(100%);
+  background-color: rgb(75, 75, 75);
 }
 .maracontwed
 {
-  width: 90%;
-  background-color: #202020;
+  top: 1%;
+  position: relative;
+  width: 98%;
   border-radius: 20px;
-  height: 70vh;
+  height: calc(100% - 3vh);
   margin: auto;
+  animation: smoothGradient 60s linear infinite alternate both;
+  animation-timing-function: ease ;
 }
 .paskdnal123123as
 {
@@ -245,8 +424,7 @@ body
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  text-shadow: 0.4px 0.4px #323232 !important;
-  border-radius: 20px;
+  text-shadow: 0.4px 0.4px 10px #000000 !important;
 }
 .rotate {
   position: absolute;
@@ -436,4 +614,43 @@ body
 .rotate .angle:nth-child(5) .position{
   /* animate the fly out of the particle and its fade out at the end */
   -webkit-animation: position 2.45s linear 0s infinite;
+}
+@keyframes smoothGradient {
+  0%{
+    background-color: #545454;
+  }
+  8%{
+    background-color: linear-gradient(40deg, rgba(61,50,74,1) 0%, rgba(62,76,119,1) 100%);  
+  }
+  16%{
+    background-color: linear-gradient(40deg, rgba(42,44,117,1) 0%, rgba(44,43,81,1) 100%);  
+  }
+  24%{
+    background-color: linear-gradient(40deg, rgba(24,54,72,1) 0%, rgba(228,229,227,1) 100%);
+  }
+  32%{
+    background-color: linear-gradient(40deg, rgba(147,64,155,1) 0%, rgba(216,91,219,1) 100%);
+  }
+  40%{
+    background-color: linear-gradient(40deg, rgba(103,57,122,1) 0%, rgba(78,57,102,1) 14%, rgba(1,56,42,1) 53%, rgba(2,136,111,1) 100%);
+  }
+  48%{
+    background-color: linear-gradient(40deg, rgba(149,109,51,1) 0%, rgba(203,121,55,1) 45%, rgba(210,200,173,1) 100%);
+  }
+  56%{
+    background-color: linear-gradient(40deg, rgba(99,59,38,1) 0%, rgba(215,196,136,1) 100%);
+  }
+  64%{
+    background-color: linear-gradient(40deg, rgba(222,120,51,1) 0%, rgba(252,210,83,1) 100%);
+  }
+  72%{
+    background-color: linear-gradient(40deg, rgba(122,69,31,1) 0%, rgba(159,24,35,1) 100%);
+  }
+  80%{
+    background-color: linear-gradient(40deg, rgba(36,12,8,1) 0%, rgba(144,26,9,1) 100%);
+  }
+  88%
+  {
+    background-color: linear-gradient(40deg, rgba(47,34,29,1) 0%, rgba(163,116,66,1) 46%, rgba(175,49,39,1) 100%);
+  }
 }
